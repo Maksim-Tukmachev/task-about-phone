@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 100;
-        int y = 400;
-        int z = x + y;
-        if (y > 1000) {
-            int q = y / 100;
-            System.out.println(q);
-            System.out.println(z + q);
+        int balance = 100;
+        int firstSum = 400;
+        int secondBalance = balance + firstSum;
+        if (firstSum > 1000) {
+            int firstBonus = firstSum / 100;
+            System.out.println(firstBonus);
+            System.out.println(secondBalance + firstBonus);
         } else {
-            int t = 1200;
-            int a = x + y + t;
-            if (t > 1000) {
-                int s = t / 100;
-                System.out.println(s);
-                System.out.println(a + s);
+            int secondSum = 1200;
+            int finishBalance = balance + firstSum + secondSum;
+            if (secondSum > 1000) {
+                int secondBonus = secondSum / 100;
+                System.out.println(secondBonus);
+                System.out.println(finishBalance + secondBonus);
             }
         }
     }
